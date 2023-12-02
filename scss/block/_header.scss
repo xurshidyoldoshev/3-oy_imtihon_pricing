@@ -1,0 +1,115 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.wrapper {
+    background-image: url(../../img/header_bc_img_m.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.header {
+    padding-top: 40px;
+
+    &__section__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__logo {
+        max-width: 135px;
+        height: 38px;
+        flex-shrink: 0;
+    }
+
+    &__link {
+        display: none;
+    }
+
+    &__menu {
+        width: 28px;
+        height: 17px;
+        flex-shrink: 0;
+        background-image: url(../../img/header_menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        background-image: url(../../img/header_bc_img_t.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    .header {
+        padding-bottom: 48px;
+
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 64px;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+
+            &__item {
+                &__link {
+                    color: #36536B;
+                    font-size: 15px;
+                    opacity: 0.7;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &__link {
+            display: inline-block;
+            padding: 16px 24.5px 14px 26.5px;
+            background-color: #BA4270;
+            border-radius: 24px;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            color: #FBFCFE;
+            font-size: 15px;
+            letter-spacing: -0.115px;
+
+            &:hover {
+                background-color: #DA6D97;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .wrapper {
+        background-image: url(../../img/header_bc_img_d.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+}

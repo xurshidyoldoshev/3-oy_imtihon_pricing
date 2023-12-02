@@ -1,0 +1,286 @@
+.pricing {
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 327px;
+        color: #36536B;
+        font-family: "DM Serif Display";
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.246px;
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    &__plan {
+        max-width: 327px;
+        color: #BA4270;
+        font-family: "DM Serif Display";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.185px;
+        margin-bottom: 81px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &__money {
+            max-width: 327px;
+            color: #36536B;
+            font-family: "DM Serif Display";
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 72px;
+            letter-spacing: -0.431px;
+            margin-bottom: 24px;
+        }
+
+        &__frame {
+            max-width: 327px;
+            height: 1px;
+            flex-shrink: 0;
+            opacity: 0.25;
+            background-color: #36536B;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    &__checkbox__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        right: -35px;
+    }
+
+    &__checkbox__item:nth-child(-n + 3) &__checkbox__item__text {
+        color: rgb(54, 83, 107, 1);
+        position: relative;
+        left: -35px;
+
+        &::before {
+            content: '';
+            background-image: url(../../img/pricing_checkbox.svg);
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 14px;
+            height: 12px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__checkbox__item__text {
+        color: rgb(54, 83, 107, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__item__btn {
+        padding: 16px 28px 14px 28px;
+        border-radius: 24px;
+        border: 1px solid #36536B;
+        color: #36536B;
+        font-size: 15px;
+        letter-spacing: -0.115px;
+
+        &:hover {
+            color: #EDF3F8;
+            background-color: #36536B;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__checkbox2__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        right: -35px;
+    }
+
+    &__checkbox2__item:nth-child(-n + 5) &__checkbox2__item__text {
+        color: rgb(54, 83, 107, 1);
+        position: relative;
+        left: -35px;
+
+        &::before {
+            content: '';
+            background-image: url(../../img/pricing_checkbox.svg);
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 14px;
+            height: 12px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__checkbox2__item__text {
+        color: rgb(54, 83, 107, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__checkbox3__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        right: -35px;
+    }
+
+    &__checkbox3__item:nth-child(-n + 7) &__checkbox3__item__text {
+        color: rgb(54, 83, 107, 1);
+        position: relative;
+        left: -35px;
+
+        &::before {
+            content: '';
+            background-image: url(../../img/pricing_checkbox.svg);
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 14px;
+            height: 12px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__checkbox3__item__text {
+        color: rgb(54, 83, 107, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pricing {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    
+        &__title {
+            max-width: 339px;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369px;
+            margin-bottom: 69px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    
+        &__plan {
+            max-width: 223px;
+            line-height: 40px;
+            margin-bottom: 13px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    
+        &__item {
+            &__money {
+                max-width: 223px;
+                font-size: 48px;
+                letter-spacing: -0.369px;
+                margin-bottom: 24px;
+                padding-bottom: 21px;
+            }
+    
+            &__frame {
+                width: 223px;
+            }
+    
+        }
+    
+    }
+}
+@media screen and (min-width: 992px) {
+    .pricing {
+        padding-bottom: 96px;
+        padding-top: 96px;
+
+        &__container {
+            align-items: flex-start;
+        }
+    
+        &__title {
+            max-width: 546px;
+            font-size: 56px;
+            letter-spacing: -0.431px;
+            margin-bottom: 72px;
+            margin-left: 0;
+            text-align: start;
+        }
+    
+        &__plan {
+            max-width: 350px;
+            margin-bottom: 16px;
+        }
+    
+        &__list {
+            gap: 30px;
+        }
+    
+        &__item {
+            align-items: flex-start;
+            text-align: start;
+            &__money {
+                width: 350px;
+                font-size: 56px;
+                letter-spacing: -0.431px;
+                padding-bottom: 24px;
+            }
+    
+            &__frame {
+                width: 280px;
+            }
+    
+        }
+    
+    }
+}
+@media screen and (min-width: 1080px) {
+    .pricing__item__frame {
+        width: 350px;
+    }
+}
